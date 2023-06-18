@@ -1,0 +1,9 @@
+model\login\LoginDao.class
+controller\Amigo.class
+controller\Login.class
+model\amigos\AmigoDao.class
+model\amigos\AmigoVo.class
+model\Conexion.class
+model\post\PostDao.class
+controller\Post.class
+model\post\PostVo.class
