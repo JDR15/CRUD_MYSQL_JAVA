@@ -11,62 +11,7 @@
     <link rel="stylesheet" href="assets/css/dash.css">
     <link rel="stylesheet" href="assets/css/tab.css">
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
-    <style>
-        .text table {
-            border-collapse: collapse;
-            margin: 10px 0;
-            font-size: 17px;
-            width: 700px;
-            border-radius: 5px 5px 0 0;
-            overflow: hidden;
-            box-shadow: 0 0 20px rgb(0, 0, 0, 0.15);
-            font-family: sans-serif;
-        }
-        
-        
-        .text .table thead tr {
-            background-color: #07ABFF;
-            color: #000000;
-            text-align: left;
-            font-weight: bold;
-        }
-        
-        .text .table th,
-        .text .table td {
-            padding: 12px 15px;
-        }
-        
-        .text .table tbody tr {
-            border-bottom: 1px solid #dddddd;
-        }
-        
-        .text .table tbody tr:nth-of-type(even) {
-            background-color: #f3f3f3;
-        }
-        
-        .text .table tbody tr:last-of-type {
-            border-bottom: 2px solid #07ABFF;
-        }
-        
-        .text .table .btn_a button{
-            /* color: #4078e0; */
-            background-color:#4078e0;
-            padding: 10px 10px;
-            border: none;
-            font-size: 16px;
-            border-radius: 10px;
-            color: #f3f3f3;
-        }
-        
-        .text .table .btn_i button{
-            background-color:#e04040;
-            padding: 10px 10px;
-            border: none;
-            font-size: 16px;
-            border-radius: 10px;
-            color: #f3f3f3;
-        }
-    </style>
+   
 
 </head>
 
@@ -147,7 +92,7 @@
     
     <main>
         <div class="text">
-            
+            <div class="table">
             <table>
                 <thead>
                     <th>Identificacion</th>
@@ -156,6 +101,8 @@
                     <th>Telefono</th>
                     <th>Ciudad</th>
                     <th>Contraseña</th>
+                    <th></th>
+                    <th></th>
                 </thead>
             
                 <c:forEach var="amigo" items="${amigos}">
@@ -187,7 +134,7 @@
             
             
             </table>
-
+        </div>
         </div>
     </main>
 

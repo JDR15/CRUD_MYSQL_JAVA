@@ -43,7 +43,7 @@ public class PostDao {
             con.close();
         }
 
-    return c;
+        return c;
     }
 
     public List<PostVo> list() throws SQLException{
@@ -113,7 +113,7 @@ public class PostDao {
     }
 
 
-    return u;
+        return u;
     }
 
 }

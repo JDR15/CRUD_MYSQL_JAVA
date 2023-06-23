@@ -89,33 +89,37 @@
     
     <main>
         <div class="text">
-            
-         
-            <table>
-                <thead>
-                    <th>Id</th>
-                    <th>Destinatario</th>
-                    <th>Etiquetas</th>
-                    <th>Img</th>
-                    <th>Descripcion</th>
-                </thead>
-            
-                <c:forEach var="post" items="${posts}">
-            
-                    <tbody>
-                        <td>${post.getId()}</td>
-                        <td>${post.getDestinatario()}</td>
-                        <td>${post.getEtiquetas()}</td>
-                        <td>${post.getImagen()}</td>
-                        <td>${post.getDescripcion()}</td>
-                        <td>
-                            <div class="btn_a">
-                                <a href="post?op=R"><button id="Actualizar${amigo.getIdentificacion()}" onclick="actualizar('${amigo.getIdentificacion()}')">Actualizar</button></a>
-                            </div>
-                        </td>
-                    </tr>
-            
-                </c:forEach>
+
+            <div class="table">
+                <table>
+                    <thead>
+                        <th>Id</th>
+                        <th>Destinatario</th>
+                        <th>Etiquetas</th>
+                        <th>Img</th>
+                        <th>Descripcion</th>
+                        <th></th>
+                        <th></th>
+                    </thead>
+
+                    <c:forEach var="post" items="${posts}">
+
+                        <tbody>
+                            <td>${post.getId()}</td>
+                            <td>${post.getDestinatario()}</td>
+                            <td>${post.getEtiquetas()}</td>
+                            <td>${post.getImagen()}</td>
+                            <td>${post.getDescripcion()}</td>
+                            <td>
+                                <div class="btn_a">
+                                    <a href="post?op=renew"><button id="Actualizar${amigo.getIdentificacion()}"
+                                            onclick="actualizar('${amigo.getIdentificacion()}')">Actualizar</button></a>
+                                </div>
+                            </td>
+                            </tr>
+                        </tbody>
+            </div>
+            </c:forEach>
             </table>
 
         </div>
