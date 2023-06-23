@@ -86,7 +86,7 @@
     <main>
         <section class="home-section">
             <div class="title">
-            <div class="text">Publicar</div>
+            <div class="text">Actualizar</div>
             </div>
               <div class="content">
                
